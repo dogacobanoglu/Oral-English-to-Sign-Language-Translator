@@ -1,0 +1,69 @@
+Label 1 Text: Translate from English to BSL
+Baby blue screen
+Arial font 20 px
+Two buttons below
+Button1:  ‘Click to speak’
+Button 2: ‘Click to type’ 
+Empty label beneath
+
+When Button1 clicked:
+	Clear label section
+Call voice recognition
+	Before getting text set label to ’loading...’
+After getting results call ‘Break into words’
+Check if word is in list of 20 bad words
+	()
+	If in list remove word from result
+Call ‘classify
+Classify word in list of time frame, topic or action/comment
+	If in time frame list
+		Find the match 
+			Add to FINAL variable time frame
+		If no match
+			Place a blank slate 
+	elif in topic list
+		Find the match 
+			Add to FINAL variable topic
+		If no match
+			Place a blank slate 
+	elif in action/comment list
+		Find the match 
+			Add to FINAL variable action/comment
+		If no match
+			Place a blank slate 
+	Else
+		Place a blank slate 
+If more than 1 variable per classifications, use hierarchy 
+
+Give symbols of words in order: time frame, topic and action/comment in label2
+Return all to same
+
+Click button to type 
+	Clear label section
+	Before getting text set label to ’loading...
+	After getting results call ‘Break into words’
+Check if word is in list of 20 bad words
+	()
+	If in list remove word from result
+Call ‘classify
+Classify word in list of time frame, topic or action/comment
+	If in time frame list
+		Find the match 
+			Add to variable time frame
+		If no match
+			Place a blank slate 
+	elif in topic list
+		Find the match 
+			Add to variable topic
+		If no match
+			Place a blank slate 
+	elif in action/comment list
+		Find the match 
+			Add to variable action/comment
+		If no match
+			Place a blank slate 
+	Else
+		Place a blank slate 
+If more than 1 variable per classifications, use hierarchy 
+Give symbols of words in order: time frame, topic and action/comment in label2
+	Return all to same
